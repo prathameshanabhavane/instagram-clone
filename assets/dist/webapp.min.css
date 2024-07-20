@@ -95,16 +95,24 @@ body {
 
 .logo {
   display: inline-block;
-  margin: 30px 0;
+  margin: 30px 0 20px;
 }
 
 .nav ul {
   list-style: none;
 }
 .nav .nav-option {
-  padding: 13px 0;
+  padding: 13px 15px;
   display: inline-flex;
   align-items: center;
+  width: 80%;
+  margin: 3px 0;
+  border-radius: 10px;
+  transition: all 0.3s;
+  background-color: #fff;
+}
+.nav .nav-option:hover {
+  background-color: #f2f2f2;
 }
 .nav .nav-option span {
   margin-left: 20px;
