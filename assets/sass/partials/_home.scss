@@ -32,3 +32,23 @@
     flex: 0 0 30%;
     max-width: 30%;
 }
+
+@media(max-width: 991px) {
+    .mr-section,
+    .ml-section,
+    .right-section,
+    .left-section {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .middel-main-container,
+    .main-body {
+        flex-wrap: wrap;
+    }
+
+    .left-section {
+        position: relative;
+        height: auto;
+    }
+}

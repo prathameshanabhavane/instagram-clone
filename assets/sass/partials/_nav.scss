@@ -8,6 +8,7 @@
     ul {
         list-style: none;
     }
+
     .nav-option {
         padding: 13px 0;
         display: inline-flex;
@@ -17,6 +18,41 @@
             margin-left: 20px;
             font-size: 16px;
             color: $color-1;
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .logo {
+        margin-bottom: 0;
+    }
+    
+    .nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        display: flex;
+        z-index: 9;
+
+        ul {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            overflow-x: auto;
+
+            li {
+                flex: 1;
+            }
+        }
+
+        .nav-option {
+            margin: 0 8px;
+
+            span {
+                display: none;
+            }
         }
     }
 }

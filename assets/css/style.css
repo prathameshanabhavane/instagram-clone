@@ -112,6 +112,35 @@ body {
   color: #000000;
 }
 
+@media (max-width: 991px) {
+  .logo {
+    margin-bottom: 0;
+  }
+  .nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    z-index: 9;
+  }
+  .nav ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .nav ul li {
+    flex: 1;
+  }
+  .nav .nav-option {
+    margin: 0 8px;
+  }
+  .nav .nav-option span {
+    display: none;
+  }
+}
 .status-container {
   display: flex;
   align-items: center;
@@ -157,6 +186,14 @@ body {
   opacity: 0.6;
 }
 
+@media (max-width: 991px) {
+  .status-container {
+    width: 100%;
+    padding: 0;
+    overflow-y: scroll;
+    padding-bottom: 10px;
+  }
+}
 .user-element {
   display: flex;
   align-items: center;
@@ -380,6 +417,11 @@ body {
   color: #000000;
 }
 
+@media (max-width: 991px) {
+  .post-element {
+    width: 100%;
+  }
+}
 .comments h5,
 .comments h6 {
   font-size: 11px;
@@ -533,6 +575,23 @@ body {
   max-width: 30%;
 }
 
+@media (max-width: 991px) {
+  .mr-section,
+  .ml-section,
+  .right-section,
+  .left-section {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .middel-main-container,
+  .main-body {
+    flex-wrap: wrap;
+  }
+  .left-section {
+    position: relative;
+    height: auto;
+  }
+}
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -111,3 +111,10 @@
         color: $color-1;
     }
 }
+
+
+@media(max-width: 991px) {
+    .post-element {
+        width: 100%;
+    }
+}
