@@ -279,6 +279,7 @@ body {
 }
 
 .suggestion-element {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -333,6 +334,11 @@ body {
   color: #0095f6;
 }
 
+.suggestion-component {
+  padding: 10px 0 30px;
+  border-bottom: 1px solid #c7c7c7;
+}
+
 .suggestion-horizontal {
   display: flex;
   align-items: center;
@@ -374,6 +380,11 @@ body {
 .suggestion-horizontal .s-header .see-all,
 .suggestion-horizontal .s-header a {
   color: #0095f6;
+}
+.suggestion-horizontal .close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .posts-container {

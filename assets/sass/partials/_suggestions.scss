@@ -25,6 +25,7 @@
 }
 
 .suggestion-element {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -77,6 +78,11 @@
 
 }
 
+.suggestion-component {
+    padding: 10px 0 30px;
+    border-bottom: 1px solid $color-6;
+}
+
 .suggestion-horizontal {
     display: flex;
     align-items: center;
@@ -125,5 +131,11 @@
         a {
             color: $color-4;
         }
+    }
+
+    .close-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
     }
 }
