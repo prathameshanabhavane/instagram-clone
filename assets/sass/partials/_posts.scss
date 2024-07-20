@@ -1,0 +1,113 @@
+.post-element {
+    width: 470px;
+    margin: 5px auto;
+    border-bottom: 1px solid $color-6;
+}
+
+.post-user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+
+    .user-wrapper {
+        display: flex;
+        align-items: center;
+
+        h2 {
+            font-size: 14px;
+            font-weight: 600;
+            color: $color-1;
+            margin-bottom: 0;
+            @include truncate_text(1, $is_fixed_height: true);
+            display: flex;
+            align-items: center;
+            margin-right: 5px;
+
+            span {
+                margin-right: 5px;
+            }
+
+        }
+
+        .spend-time {
+            font-size: 12px;
+            font-weight: 400;
+            color: $color-5;
+        }
+
+        .user-figure {
+            height: 42px;
+            width: 42px;
+            background-color: #000;
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+
+        .user-info {
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    
+    .option-btn {
+        background-color: transparent;
+        border: none;
+    }
+}
+
+.posts {
+    figure {
+        height: 468px;
+        width: 100%;
+        overflow: hidden;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.post-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+        margin: 0 5px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.likes {
+    margin: 5px 0 7px;
+
+    h5 {
+        font-size: 11px;
+        font-weight: 600;
+        color: $color-1;
+    }
+}

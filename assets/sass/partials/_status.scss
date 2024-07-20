@@ -1,0 +1,51 @@
+.status-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 15px;
+    width: 600px;
+    margin: 0 auto 20px;
+}
+
+.status-element {
+    margin: 0 8px;
+
+    .user-figure {
+        background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
+        height: 65px;
+        width: 65px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    img {
+        height: 55px;
+        width: 55px;
+        border-radius: 50%;
+        background: #fff;
+        padding: 3px;
+    }
+
+    .user-name {
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0.12px;
+        color: $color-1;
+        text-align: center;
+        margin-top: 5px;
+    }
+}
+
+.status-seen {
+    .user-figure {
+        background: $color-3;  
+    }
+
+    .user-name {
+        opacity: 0.6;
+    }
+}
+

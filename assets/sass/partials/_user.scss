@@ -1,0 +1,52 @@
+.user-element {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+
+    .user-wrapper {
+        display: flex;
+        align-items: center;
+
+        h2 {
+            font-size: 14px;
+            font-weight: 600;
+            color: $color-1;
+            margin-bottom: 5px;
+            @include truncate_text(1, $is_fixed_height: true);
+        }
+
+        h6 {
+            font-size: 12px;
+            font-weight: 400;
+            color: $color-5;
+        }
+
+        .s-user {
+            height: 50px;
+            width: 50px;
+            background-color: #000;
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+
+        .user-info {
+            margin-left: 10px;
+        }
+    }
+
+    .switch-link {
+        font-size: 12px;
+        font-weight: 600;
+        color: $color-4;
+    }
+
+}
+

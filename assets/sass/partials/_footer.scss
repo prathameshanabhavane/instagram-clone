@@ -1,0 +1,46 @@
+.footer {
+    margin-top: 30px;
+}
+
+.footer-nav {
+    ul {
+        list-style: none;
+    }
+
+    li {
+        position: relative;
+        display: inline-block;
+        margin: 3px;
+
+        &::after {
+            height: 2px;
+            width: 2px;
+            border-radius: 50%;
+            background-color: $color-5;
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    a {
+        font-size: 12px;
+        font-weight: 400;
+        color: $color-6;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+   
+}
+
+.copyright {
+    margin: 25px 0;
+
+    p {
+        font-size: 12px;
+        font-weight: 400;
+        color: $color-6;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,34 @@
+.main-body {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 15px;
+}
+
+.left-section {
+    border-right: 1px solid $color-3;
+    flex: 0 0 20%;
+    max-width: 20%;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.right-section {
+    flex: 0 0 80%;
+    max-width: 80%;
+}
+
+.middel-main-container {
+    display: flex;
+    padding: 25px 0;
+}
+
+.ml-section {
+    flex: 0 0 70%;
+    max-width: 70%;
+}
+
+.mr-section {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
