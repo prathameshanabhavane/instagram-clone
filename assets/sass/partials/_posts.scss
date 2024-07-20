@@ -1,6 +1,11 @@
-.post-element {
+.posts-container {
     width: 470px;
-    margin: 5px auto;
+    margin: 0 auto;
+}
+
+.post-element {
+    width: 100%;
+    margin: 5px 0;
     border-bottom: 1px solid $color-6;
 }
 
@@ -114,7 +119,7 @@
 
 
 @media(max-width: 991px) {
-    .post-element {
+    .posts-container {
         width: 100%;
     }
 }

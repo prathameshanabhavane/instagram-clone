@@ -304,6 +304,12 @@ body {
   font-size: 12px;
   font-weight: 400;
   color: #8e8e8e;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.4;
+  height: 1.4em;
 }
 .suggestion-element .user-wrapper .s-user {
   height: 45px;
@@ -327,9 +333,57 @@ body {
   color: #0095f6;
 }
 
-.post-element {
+.suggestion-horizontal {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  padding-bottom: 10px;
+}
+.suggestion-horizontal .suggestion-element {
+  flex-direction: column;
+  border: 1px solid #c7c7c7;
+  border-radius: 5px;
+  max-width: 35%;
+  flex: 0 0 35%;
+  padding: 30px 10px;
+  margin-right: 20px;
+}
+.suggestion-horizontal .user-wrapper {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.suggestion-horizontal .user-wrapper .s-user {
+  height: 60px;
+  width: 60px;
+  margin-bottom: 10px;
+}
+.suggestion-horizontal .user-info {
+  margin: 0 !important;
+  width: 100%;
+  text-align: center;
+}
+.suggestion-horizontal .follow-link {
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #0095f6;
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+.suggestion-horizontal .s-header .see-all,
+.suggestion-horizontal .s-header a {
+  color: #0095f6;
+}
+
+.posts-container {
   width: 470px;
-  margin: 5px auto;
+  margin: 0 auto;
+}
+
+.post-element {
+  width: 100%;
+  margin: 5px 0;
   border-bottom: 1px solid #c7c7c7;
 }
 
@@ -429,7 +483,7 @@ body {
 }
 
 @media (max-width: 991px) {
-  .post-element {
+  .posts-container {
     width: 100%;
   }
 }

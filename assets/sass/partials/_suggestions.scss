@@ -46,6 +46,7 @@
             font-size: 12px;
             font-weight: 400;
             color: $color-5;
+            @include truncate_text(1, $is_fixed_height: true);
         }
 
         .s-user {
@@ -76,3 +77,53 @@
 
 }
 
+.suggestion-horizontal {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    padding-bottom: 10px;
+
+    .suggestion-element {
+        flex-direction: column;
+        border: 1px solid $color-6;
+        border-radius: 5px;
+        max-width: 35%;
+        flex: 0 0 35%;
+        padding: 30px 10px;
+        margin-right: 20px;
+    }
+
+    .user-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 15px;
+
+        .s-user {
+            height: 60px;
+            width: 60px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .user-info {
+        margin: 0 !important;
+        width: 100%;
+        text-align: center;
+    }
+
+    .follow-link {
+        font-size: 12px;
+        font-weight: 600;
+        color: $color-2;
+        background-color: $color-4;
+        padding: 8px 15px;
+        border-radius: 8px;
+    }
+
+    .s-header {
+        .see-all,
+        a {
+            color: $color-4;
+        }
+    }
+}
