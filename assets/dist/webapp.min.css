@@ -144,6 +144,9 @@ body {
   }
   .nav .nav-option {
     margin: 0 8px;
+    padding: 13px 0;
+    border-radius: 0;
+    justify-content: center;
   }
   .nav .nav-option span {
     display: none;
