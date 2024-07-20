@@ -13,7 +13,7 @@ var concat = require('gulp-concat');
 // });
 
 gulp.task('css', function() {
-	return gulp.src(['assets/css/font-awesome.css','assets/css/style.css'])
+	return gulp.src(['assets/css/style.css'])
 		.pipe(concat('webapp.min.css'))
 		.pipe(gulp.dest('assets/dist'));
 });
